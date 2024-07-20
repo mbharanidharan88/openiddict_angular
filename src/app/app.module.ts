@@ -3,10 +3,12 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CallbackComponent } from './components/callback/callback.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CallbackComponent
   ],
   imports: [
     BrowserModule,
