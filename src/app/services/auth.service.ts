@@ -9,12 +9,12 @@ export class AuthService {
 
   constructor() {
     const settings: UserManagerSettings = {
-      authority: 'https://localhost:44350',
+      authority: 'https://localhost:7151',
       client_id: 'eclatech_client_portal',
       redirect_uri: 'http://localhost:4200/callback',
       response_type: 'code',
       scope: 'openid eclatech_client_api offline_access',
-      post_logout_redirect_uri: 'http://localhost:4200/',
+      post_logout_redirect_uri: 'http://localhost:4200',
     };
 
     this.userManager = new UserManager(settings);
